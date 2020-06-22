@@ -1,0 +1,1560 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+///////////////////////////////////////
+    // media style 
+@media only screen and (max-width: 1366px){
+    body{
+        .announcement_wrap{
+            .content_wrap{
+                .image_wrap{
+
+                }
+                .text-block-wrap{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+        .description_wrap{
+            .content_wrap{
+               .description-text_wrap{
+                  .line_wrap{
+                     .line_block{
+                        .line_1{
+                        }
+                        .line{
+                        }
+                     }
+                     .logo_icon{
+                     }
+                  }
+                  .description-text{
+                     p{
+                     }
+                  }
+                  .post-script{
+                     .text-1{
+                     }
+                     .text-2{
+      
+                     }
+                  }
+               }
+               .comics_wrap{
+                  .comics_item{
+                     .comics_item_title{
+                     }
+                     .content_block{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 900px;
+                        .text_block{
+                            width: 100%;
+                            .iron_text{
+                               @include comics-text;
+                               text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                               font-size: 26px;
+                               text-align: left;
+                               color: #fefffe;
+                               line-height: 2;
+       
+                               text-indent: 1.5em; /* Отступ первой строки */
+                               text-align: left;
+                            }
+                            .super_text{
+                               @include comics-text;
+                               text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                               font-size: 26px;
+                               text-align: left;
+                               color: #fefffe;
+                               line-height: 2;
+       
+                               text-indent: 1.5em; /* Отступ первой строки */
+                               text-align: left;
+       
+                               width: 70%;
+       
+                               margin-left: 300px;
+                            }
+                         }
+                        .text_block{
+                           width: 90%;
+                        }
+                        .img_block{
+                           .photo_item{
+                           }
+                           .ironman{
+                              width: 360px;
+                              height: 342px;
+      
+                              top: -100px;
+                              left: -90px;
+                           }
+                           .superman{
+                              width: 620px;
+                              height: 450px;
+      
+                              top: -160px;
+                              left: -190px;
+                           }
+                           .steve{
+                              width: 394px;
+                              height: 394px;
+      
+                              top: -100px;
+                              left: -140px;
+                           }
+                        }
+                     }
+                  }
+                  .comics_item:last-child{
+                     margin-bottom: 0;
+                  }
+               }
+            }
+         }
+    }
+}
+@media only screen and (max-width: 1024px){
+    body{
+        header{
+            .header_content_wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        
+                padding-left: 10px;
+                padding-right: 10px;
+                @include content-width;
+                .logo_wrap{
+                    a{
+                        img{
+                            width: 650px;
+                        }
+                    }
+                    margin-bottom: 25px;
+                }
+                .navigation_wrap{
+                    /* display: none; */
+                    .nav_list{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .nav_item{
+                            margin-right: 45px;
+                            padding: 7px 20px;
+                            border-radius: 10px;
+                            background-color: #fff;
+                            text-align: center;
+                            a{
+                                color: #000051;
+                                
+                            }
+                        }
+                        .nav_item:hover{
+                            background: none;
+                            border-bottom: 3px solid transparent;
+                        }
+                        .nav_item:hover a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .price_wrap{
+         .price_wrap_content{
+             .img_wrap{
+                 .thor{
+                     position: absolute;
+                     width: 350px;
+     
+                     top: -50px;
+                     left: 25px;
+     
+                     transform: rotate(-10deg);
+                 }
+                 .iron{
+                     position: absolute;
+                     width: 270px;
+     
+                     top: -300px;
+                     left: -290px;
+                 }
+             }
+             .price-wrap{
+               position: relative;
+               .price-number{
+                   width: 750px;
+                   height: 550px;
+                   background-image: url(../img/img-png/price-block-01.png);
+                   background-repeat: no-repeat;
+                   background-size: 900px 400px;
+                   background-position: center;
+   
+                   position: relative;
+                   z-index: 4;
+                   .item-0{
+                     font-size: 25px;
+                     top: 120px;
+                     left: 85px;
+ 
+                 }
+                 .item-1{
+                     font-size: 90px;
+                     top: 140px;
+                     left: 160px;
+                 }
+                 .item-2{
+                     font-size: 90px;
+                     top: 275px;
+                     left: 285px;
+                 }
+                 .item-3{
+                     font-size: 25px;
+                     top: 390px;
+                     left: 455px;
+                 }
+               }
+            }
+         }
+     }
+        .cover_wrap{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .phone_wrap{
+               margin-top: 100px;
+               margin-bottom: 50px;
+      
+               display: flex;
+               justify-content: space-between;
+               flex-wrap: no-wrap;
+               .phone_text{
+                   font-size: 40px;
+               }
+            }
+        }
+        .announcement_wrap{
+            .content_wrap{
+               .image_wrap{
+                  position: relative;
+                  .img_lord{
+                     width: 350px;
+                     height: 270px;
+                     position: absolute;
+                     left: -250px;
+                     transform: rotate(-45deg);
+                     @include animation-settings;
+                  }
+                  .img_lord:hover{
+                     transform-origin: center center;
+                     transform: rotate(-55deg);
+                     left: -200px;
+                  }
+                  .img_spide{
+                     width: 324px;
+                     height: 254px;
+      
+                     position: absolute;
+                     left: -150px;
+                     z-index: 1;
+      
+                     transform: rotate(25deg);
+                     @include animation-settings;
+      
+                     animation-name: spide-position;
+                  }
+                  .img_spide:hover{
+                     transform-origin: center center;
+                     transform: scale(1.1);
+                  }
+               }
+            }
+            .text-block-wrap{
+                z-index: 2;
+            }
+        }
+        .announcement_wrap{
+            .content_wrap{
+                .image_wrap{
+
+                }
+                .text-block-wrap{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+        .description_wrap{
+            .content_wrap{
+                .logo_wrap{
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    a{
+                       .logo{
+                          width: 900px;
+        
+                          @include animation-settings;
+                       }
+                       .logo:hover{
+                          transform: scale(1.0);
+                       }
+                    }
+                 }
+                 .description-text_wrap{
+                    .line_wrap{
+                       .line_block{
+                          .line_1{
+                            width: 100%;
+                         }
+                         .line{
+                            width: 100%;
+                         }
+                       }
+                    }
+                    .description-text{
+                        width: 90%;
+                        text-align: center;
+         
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        p{
+                           @include description-text;
+                           font-size: 27px;
+                           line-height: 1.3;
+                           letter-spacing: normal;
+                           color: #ffffff;
+         
+                           text-indent: 1.5em;
+                           text-align: justify;
+         
+                           margin-right: 25px;
+                           margin-left: 25px;
+                        }
+                     }
+                 }
+               .comics_wrap{
+                  .comics_item{
+                    width: 80%;
+
+                      margin-right: 15px;
+                      margin-left: 15px;
+                     .content_block{
+                         width: 90%;
+                         margin: 0 auto;
+                        .text_block{
+                            width: 50%;
+                            .iron_text{
+                               @include comics-text;
+                               text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                               font-size: 26px;
+                               text-align: left;
+                               color: #fefffe;
+                               line-height: 2;
+       
+                               text-indent: 1.5em; /* Отступ первой строки */
+                               text-align: left;
+                            }
+                            .super_text{
+                               @include comics-text;
+                               text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                               font-size: 26px;
+                               text-align: left;
+                               color: #fefffe;
+                               line-height: 2;
+       
+                               text-indent: 1.5em; /* Отступ первой строки */
+                               text-align: left;
+
+                               margin-right: 0;
+                               margin-left: -70px;
+
+                               width: 90%;
+                            }
+                         }
+                        .img_block{
+                           .ironman{
+                              width: 320px;
+                              height: 322px;
+      
+                              top: -5px;
+                              left: -350px;
+                           }
+                           .superman{
+                              width: 520px;
+                              height: 350px;
+      
+                              top: -100px;
+                              left: -100px;
+                           }
+                           .steve{
+                              width: 394px;
+                              height: 394px;
+      
+                              top: -30px;
+                              left: -400px;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    body{
+        header{
+            .header_content_wrap{
+                .logo_wrap{
+                    a{
+                        img{
+                            width: 750px;
+                        }
+                    }
+                    margin-bottom: 25px;
+                }
+                .navigation_wrap{
+                    .nav_list{
+                        .nav_item{
+                            margin-right: 45px;
+                            padding: 7px 20px;
+                            border-radius: 10px;
+                            background-color: #fff;
+                            a{
+                                color: #000051;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .price_wrap{
+         .price_wrap_content{
+             .img_wrap{
+                display: none;
+             }
+             .price-wrap{
+                transform: scale(.75);
+               .price-number{
+                   width: 450px;
+                   height: 550px;
+                   background-image: url(../img/img-png/price-block-01.png);
+                   background-repeat: no-repeat;
+                   background-size: 600px 300px;
+                   background-position: center;
+   
+                   position: relative;
+                   z-index: 4;
+                   .item-0{
+                     font-size: 15px;
+                     top: 160px;
+                     left: 45px;
+ 
+                 }
+                 .item-1{
+                     font-size: 70px;
+                     top: 170px;
+                     left: 80px;
+                 }
+                 .item-2{
+                     font-size: 70px;
+                     top: 275px;
+                     left: 150px;
+                 }
+                 .item-3{
+                     font-size: 17px;
+                     top: 365px;
+                     left: 280px;
+                 }
+               }
+            }
+         }
+     }
+        .cover_wrap{
+            .phone_wrap{
+               .phone_text{
+                   font-size: 35px;
+               }
+            }
+        }
+        .announcement_wrap{
+            .content_wrap{
+               .image_wrap{
+                  display: none;
+               }
+            }
+        }
+        .description_wrap{
+            .content_wrap{
+                .logo_wrap{
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    a{
+                       .logo{
+                          width: 800px;
+        
+                          @include animation-settings;
+                       }
+                       .logo:hover{
+                          transform: scale(1.0);
+                       }
+                    }
+                 }
+                 .description-text_wrap{
+                    .line_wrap{
+                        width: auto;
+                        display: flex;
+                        justify-content: space-between;
+         
+                        align-items: center;
+                        .line_block{
+                           width: 50%;
+                           .line_1{
+                              width: 50%;
+                              height: 10px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                              margin-bottom: 10px;
+                           }
+                           .line{
+                              width: 50%;
+                              height: 5px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                           }
+                        }
+                        .logo_icon{
+                           width: 120px;
+                           margin-left: 7px;
+                           margin-right: 7px;
+                        }
+                     }
+                     .description-text{
+                        width: 95%;
+                        text-align: center;
+         
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        p{
+                           @include description-text;
+                           font-size: 27px;
+                           line-height: 1.3;
+                           letter-spacing: normal;
+                           color: #ffffff;
+         
+                           text-indent: 1.5em;
+                           text-align: justify;
+         
+                           margin-right: 25px;
+                           margin-left: 25px;
+                        }
+                     }
+                    .line_wrap{
+                       .line_block{
+                          .line_1{
+                            width: 100%;
+                         }
+                         .line{
+                            width: 100%;
+                         }
+                       }
+                    }
+                 }
+               .comics_wrap{
+                  .comics_item{
+                    width: 70%;
+
+                      margin-right: 15px;
+                      margin-left: 15px;
+                     .content_block{
+                        .text_block{
+                            width: 90%;
+                            .iron_text{
+                               @include comics-text;
+                               text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                               font-size: 26px;
+                               text-align: left;
+                               color: #fefffe;
+                               line-height: 2;
+       
+                               text-indent: 1.5em; /* Отступ первой строки */
+                               text-align: justify;
+                            }
+                            .super_text{
+                               @include comics-text;
+                               text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                               font-size: 26px;
+                               text-align: left;
+                               color: #fefffe;
+                               line-height: 2;
+       
+                               text-indent: 1.5em; /* Отступ первой строки */
+                               text-align: justify;
+
+                               margin-right: 0;
+                               margin-left: 0;
+
+                               width: 100%;
+                            }
+                         }
+                        .img_block{
+                            display: none;
+                        }
+                     }
+                  }
+               }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    body{
+        header{
+            .header_content_wrap{
+                .logo_wrap{
+                    a{
+                        img{
+                            width: 650px;
+                        }
+                    }
+                    margin-bottom: 15px;
+                }
+                .arrow-wrap{
+                    margin: 5px;
+                    display: block;
+                    .arrow{
+                        width: 25px;
+                    }
+                }
+                .navigation_wrap{
+                    display: none;
+                    margin-top: 25px;
+                    .nav_list{
+                        display: flex;
+                        flex-direction: column;
+                        .nav_item{
+                            margin-right: 0;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                            background: none;
+                            border-radius: 0;
+                            
+                            a{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cover_wrap{
+            .phone_wrap{
+               .phone_text{
+                   font-size: 30px;
+               }
+            }
+        }
+        .description_wrap{
+            .content_wrap{
+                .logo_wrap{
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    a{
+                       .logo{
+                          width: 800px;
+        
+                          @include animation-settings;
+                       }
+                       .logo:hover{
+                          transform: scale(1.0);
+                       }
+                    }
+                 }
+                 .description-text_wrap{
+                    .line_wrap{
+                        width: auto;
+                        display: flex;
+                        justify-content: space-between;
+         
+                        align-items: center;
+                        .line_block{
+                           width: 50%;
+                           .line_1{
+                              width: 50%;
+                              height: 10px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                              margin-bottom: 10px;
+                           }
+                           .line{
+                              width: 50%;
+                              height: 5px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                           }
+                        }
+                        .logo_icon{
+                           width: 120px;
+                           margin-left: 7px;
+                           margin-right: 7px;
+                        }
+                     }
+                     .description-text{
+                        width: 95%;
+                        text-align: center;
+         
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        p{
+                           @include description-text;
+                           font-size: 27px;
+                           line-height: 1.3;
+                           letter-spacing: normal;
+                           color: #ffffff;
+         
+                           text-indent: 1.5em;
+                           text-align: justify;
+         
+                           margin-right: 25px;
+                           margin-left: 25px;
+                        }
+                     }
+                     .post-script{
+                        width: 609px;
+                        height: 123px;
+                        background-image: url(../img/img-png/ps-01.png);
+                        background-repeat: no-repeat;
+                        background-size: 609px;
+                        background-position: center;
+         
+                        margin: 0 auto;
+                        left: 80px;
+                        position: relative;
+                        .text-1{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 24px;
+                           position: absolute;
+                           top: 30px;
+                           left: 95px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+                        }
+                        .text-2{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 30px;
+                           text-transform: uppercase;
+                           position: absolute;
+                           top: 55px;
+                           left: 135px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+         
+                        }
+                     }
+                    .line_wrap{
+                       .line_block{
+                          .line_1{
+                            width: 100%;
+                         }
+                         .line{
+                            width: 100%;
+                         }
+                       }
+                    }
+                 }
+            }
+        }
+        footer{
+                .footer_content{
+                    .content_wrap{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .socialicon_wrap{
+
+                        }
+                    }
+                }
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    body{
+        header{
+            .header_content_wrap{
+                .logo_wrap{
+                    a{
+                        img{
+                            width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+        .cover_wrap{
+            .logo_wrap{
+                margin-top: 125px;
+                .logo{
+                   width: 600px;
+                }
+             }
+            .phone_wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .phone_text{
+                    font-size: 45px;
+                }
+            }
+        }
+        .announcement_wrap{
+            .content_wrap{
+                .text-block-wrap{
+                    transform: scale(.8);
+                }
+            }
+        }
+        .description_wrap{
+            .content_wrap{
+                .logo_wrap{
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    a{
+                       .logo{
+                          width: 600px;
+        
+                          @include animation-settings;
+                       }
+                       .logo:hover{
+                          transform: scale(1.0);
+                       }
+                    }
+                 }
+                 .description-text_wrap{
+                    .line_wrap{
+                        width: auto;
+                        display: flex;
+                        justify-content: space-between;
+         
+                        align-items: center;
+                        .line_block{
+                           width: 50%;
+                           .line_1{
+                              width: 50%;
+                              height: 10px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                              margin-bottom: 10px;
+                           }
+                           .line{
+                              width: 50%;
+                              height: 5px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                           }
+                        }
+                        .logo_icon{
+                           width: 120px;
+                           margin-left: 7px;
+                           margin-right: 7px;
+                        }
+                     }
+                     .description-text{
+                        width: 95%;
+                        text-align: center;
+         
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        p{
+                           @include description-text;
+                           font-size: 27px;
+                           line-height: 1.3;
+                           letter-spacing: normal;
+                           color: #ffffff;
+         
+                           text-indent: 1.5em;
+                           text-align: justify;
+         
+                           margin-right: 25px;
+                           margin-left: 25px;
+                        }
+                     }
+                     .post-script{
+                        width: 609px;
+                        height: 123px;
+                        background-image: url(../img/img-png/ps-01.png);
+                        background-repeat: no-repeat;
+                        background-size: 609px;
+                        background-position: center;
+         
+                        margin: 0 auto;
+                        left: 10px;
+                        position: relative;
+                        .text-1{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 24px;
+                           position: absolute;
+                           top: 30px;
+                           left: 95px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+                        }
+                        .text-2{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 30px;
+                           text-transform: uppercase;
+                           position: absolute;
+                           top: 55px;
+                           left: 135px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+         
+                        }
+                     }
+                    .line_wrap{
+                       .line_block{
+                          .line_1{
+                            width: 100%;
+                         }
+                         .line{
+                            width: 100%;
+                         }
+                       }
+                    }
+                 }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    body{
+        header{
+            .header_content_wrap{
+                .logo_wrap{
+                    a{
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+        .cover_wrap{
+            .logo_wrap{
+                .logo{
+                   width: 400px;
+                }
+             }
+            .phone_wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .phone_text{
+                    font-size: 35px;
+                }
+            }
+        }
+        .announcement_wrap{
+            .content_wrap{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                .text-block-wrap{
+                    transform: scale(.55);
+                }
+            }
+        }
+        .description_wrap{
+            .content_wrap{
+                .logo_wrap{
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    a{
+                       .logo{
+                          width: 400px;
+        
+                          @include animation-settings;
+                       }
+                       .logo:hover{
+                          transform: scale(1.0);
+                       }
+                    }
+                 }
+                 .description-text_wrap{
+                    .line_wrap{
+                        width: auto;
+                        display: flex;
+                        justify-content: space-between;
+         
+                        align-items: center;
+                        .line_block{
+                           width: 30%;
+                           .line_1{
+                              width: 50%;
+                              height: 10px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                              margin-bottom: 10px;
+                           }
+                           .line{
+                              width: 50%;
+                              height: 5px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                           }
+                        }
+                        .logo_icon{
+                           width: 120px;
+                           margin-left: 7px;
+                           margin-right: 7px;
+                        }
+                     }
+                     .description-text{
+                        width: 75%;
+                        text-align: center;
+         
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        p{
+                           @include description-text;
+                           font-size: 27px;
+                           line-height: 1.3;
+                           letter-spacing: normal;
+                           color: #ffffff;
+         
+                           text-indent: 1.5em;
+                           text-align: left;
+         
+                           margin-right: 25px;
+                           margin-left: 25px;
+                        }
+                     }
+                     .post-script{
+                         display: none;
+                        width: 409px;
+                        background-image: url(../img/img-png/ps-01.png);
+                        background-repeat: no-repeat;
+                        background-size: 609px;
+                        background-position: center;
+         
+                        margin: 0 auto;
+                        left: 10px;
+                        position: relative;
+                        .text-1{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 24px;
+                           position: absolute;
+                           top: 30px;
+                           left: 95px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+                        }
+                        .text-2{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 30px;
+                           text-transform: uppercase;
+                           position: absolute;
+                           top: 55px;
+                           left: 135px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+         
+                        }
+                     }
+                    .line_wrap{
+                       .line_block{
+                          .line_1{
+                            width: 100%;
+                         }
+                         .line{
+                            width: 100%;
+                         }
+                       }
+                    }
+                 }
+                 .comics_wrap{
+                    margin-top: 150px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .comics_item{
+                       width: 70%;
+        
+                       background-image: url(../img/background/comics-item_bg.png);
+                       background-repeat: no-repeat;
+                       background-position: center;
+        
+                       border-radius: 50px;
+        
+                       padding: 50px;
+                       margin-bottom: 150px;
+                       .comics_item_title{
+                          @include title-comics-text;
+                          text-transform: uppercase;
+                          text-shadow: 0 0 20px rgba(0, 0, 0, 0.72);
+                          color: #ffffff;
+                          font-size: 40px;
+                          letter-spacing: 5px;
+                          color: #ffffff;
+                          text-align: center;
+
+                          z-index: 5;
+                       }
+                       .content_block{
+                          justify-content: space-between;
+                          width: 90%;
+                          z-index: 2;
+                          .text_block{
+                             width: 100%;
+                             display: none;
+                             .iron_text{
+                                @include comics-text;
+                                text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                                font-size: 26px;
+                                text-align: left;
+                                color: #fefffe;
+                                line-height: 2;
+        
+                                text-indent: 1.5em; /* Отступ первой строки */
+                                text-align: left;
+                             }
+                             .super_text{
+                                @include comics-text;
+                                text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                                font-size: 26px;
+                                text-align: left;
+                                color: #fefffe;
+                                line-height: 2;
+        
+                                text-indent: 1.5em; /* Отступ первой строки */
+                                text-align: left;
+        
+                                width: 80%;
+        
+                                margin-left: 300px;
+                             }
+                          }
+                          .img_block{
+                             position: relative;
+                             display: block;
+                             z-index: 1;
+                             .photo_item{
+                                position: absolute;
+                             }
+                             .ironman{
+                                width: 160px;
+                                height: 142px;
+        
+                                top: -200px;
+                                left: 200px;
+
+                                transform: rotate(-25deg);
+                             }
+                             .superman{
+                                width: 250px;
+                                height: 200px;
+        
+                                top: -200px;
+                                left: 100px;
+
+                                transform: rotate(-40deg);
+                             }
+                             .steve{
+                                width: 134px;
+                                height: 134px;
+        
+                                top: -150px;
+                                left: 200px;
+                             }
+                          }
+                       }
+                    }
+                    .comics_item:last-child{
+                       margin-bottom: 0;
+                    }
+                 }
+            }
+        }
+        footer{
+            .footer_content{
+                .content_wrap{
+                    .socialicon_wrap{
+                        a{
+                            img{
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    }
+}
+@media only screen and (max-width: 375px) {
+    body{
+        .cover_wrap{
+            .logo_wrap{
+                .logo{
+                   width: 300px;
+                }
+             }
+            .phone_wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .phone_text{
+                    font-size: 25px;
+                }
+            }
+        }
+        .announcement_wrap{
+            .content_wrap{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                .text-block-wrap{
+                    transform: scale(.45);
+                    top: -50px;
+                }
+            }
+        }
+        .description_wrap{
+            .content_wrap{
+                .logo_wrap{
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    a{
+                       .logo{
+                          width: 200px;
+        
+                          @include animation-settings;
+                       }
+                       .logo:hover{
+                          transform: scale(1.0);
+                       }
+                    }
+                 }
+                 .description-text_wrap{
+                    .line_wrap{
+                        width: auto;
+                        display: flex;
+                        justify-content: space-between;
+         
+                        align-items: center;
+                        .line_block{
+                           width: 30%;
+                           .line_1{
+                              width: 50%;
+                              height: 10px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                              margin-bottom: 10px;
+                           }
+                           .line{
+                              width: 50%;
+                              height: 5px;
+                              background-color: #dee2e5;
+                              border-top: 1px solid #fff;
+                              border-bottom: 1px solid #fff;
+                              border-radius: 2px;
+                           }
+                        }
+                        .logo_icon{
+                           width: 120px;
+                           margin-left: 7px;
+                           margin-right: 7px;
+                        }
+                     }
+                     .description-text{
+                        width: 75%;
+                        text-align: center;
+         
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        p{
+                           @include description-text;
+                           font-size: 27px;
+                           line-height: 1.3;
+                           letter-spacing: normal;
+                           color: #ffffff;
+         
+                           text-indent: 1.5em;
+                           text-align: left;
+         
+                           margin-right: 25px;
+                           margin-left: 25px;
+                        }
+                     }
+                     .post-script{
+                         display: none;
+                        width: 409px;
+                        background-image: url(../img/img-png/ps-01.png);
+                        background-repeat: no-repeat;
+                        background-size: 609px;
+                        background-position: center;
+         
+                        margin: 0 auto;
+                        left: 10px;
+                        position: relative;
+                        .text-1{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 24px;
+                           position: absolute;
+                           top: 30px;
+                           left: 95px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+                        }
+                        .text-2{
+                           @include postScript-text;
+                           color: #fff;
+                           font-size: 30px;
+                           text-transform: uppercase;
+                           position: absolute;
+                           top: 55px;
+                           left: 135px;
+         
+                           font-style: italic;
+         
+                           transform: rotate(-4deg);
+         
+                        }
+                     }
+                    .line_wrap{
+                       .line_block{
+                          .line_1{
+                            width: 100%;
+                         }
+                         .line{
+                            width: 100%;
+                         }
+                       }
+                    }
+                 }
+                 .comics_wrap{
+                    margin-top: 150px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .comics_item{
+                       width: 70%;
+        
+                       background-image: url(../img/background/comics-item_bg.png);
+                       background-repeat: no-repeat;
+                       background-position: center;
+        
+                       border-radius: 50px;
+        
+                       padding: 50px;
+                       margin-bottom: 150px;
+                       .comics_item_title{
+                          @include title-comics-text;
+                          text-transform: uppercase;
+                          text-shadow: 0 0 20px rgba(0, 0, 0, 0.72);
+                          color: #ffffff;
+                          font-size: 40px;
+                          letter-spacing: 5px;
+                          color: #ffffff;
+                          text-align: center;
+
+                          z-index: 5;
+                       }
+                       .content_block{
+                          justify-content: space-between;
+                          width: 90%;
+                          z-index: 2;
+                          .text_block{
+                             width: 100%;
+                             display: none;
+                             .iron_text{
+                                @include comics-text;
+                                text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                                font-size: 26px;
+                                text-align: left;
+                                color: #fefffe;
+                                line-height: 2;
+        
+                                text-indent: 1.5em; /* Отступ первой строки */
+                                text-align: left;
+                             }
+                             .super_text{
+                                @include comics-text;
+                                text-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+                                font-size: 26px;
+                                text-align: left;
+                                color: #fefffe;
+                                line-height: 2;
+        
+                                text-indent: 1.5em; /* Отступ первой строки */
+                                text-align: left;
+        
+                                width: 80%;
+        
+                                margin-left: 300px;
+                             }
+                          }
+                          .img_block{
+                             position: relative;
+                             display: none;
+                             z-index: 1;
+                             .photo_item{
+                                position: absolute;
+                             }
+                             .ironman{
+                                width: 160px;
+                                height: 142px;
+        
+                                top: -200px;
+                                left: 200px;
+
+                                transform: rotate(-25deg);
+                             }
+                             .superman{
+                                width: 250px;
+                                height: 200px;
+        
+                                top: -200px;
+                                left: 100px;
+
+                                transform: rotate(-40deg);
+                             }
+                             .steve{
+                                width: 134px;
+                                height: 134px;
+        
+                                top: -150px;
+                                left: 200px;
+                             }
+                          }
+                       }
+                    }
+                    .comics_item:last-child{
+                       margin-bottom: 0;
+                    }
+                 }
+            }
+        }
+        footer{
+            .footer_content{
+                .content_wrap{
+                    .socialicon_wrap{
+                        a{
+                            img{
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+        footer{
+            .footer_content{
+                .content_wrap{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .socialicon_wrap{
+                        a{
+                            img{
+                                width: 100px;
+                            }
+                        }
+                    }
+                    .phone_wrap{
+                        padding-right: 15px;
+                        p{
+                            @include header-font;
+                            font-size: 35px;
+                        }
+                    }
+                }
+                .footer_title{
+                    margin-top: 25px;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    body{
+        .cover_wrap{
+            .phone_wrap{
+                .phone_text{
+                    margin: 0;
+                    margin-top: 10px;
+                    font-size: 25px;
+                }
+            }
+        }
+        .announcement_wrap{
+            .content_wrap{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                .text-block-wrap{
+                    transform: scale(.40);
+                    top: -50px;
+                }
+            }
+        }
+    }
+}

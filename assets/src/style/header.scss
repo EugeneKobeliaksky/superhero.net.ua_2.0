@@ -1,0 +1,82 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+header{
+    width: 100%;
+    background-image: url(../img/background/header_nav_bg.png);
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    textshadow: 0px 3px 43px -9px rgba(0,0,0,0.75);
+
+    z-index: 3;
+    .header_content_wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        @include content-width;
+        .logo_wrap{
+            margin: 10px;
+            a{
+                @include animation-settings;
+                img{
+                    width: 450px;
+                }
+            }
+            a:hover{
+                opacity: .7;
+            }
+        }
+        .arrow-wrap{
+            display: none;
+            margin: 5px;
+            .arrow{
+                width: 25px;
+            }
+        }
+        .navigation_wrap{
+            @include animation-settings;
+            .nav_list{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                .nav_item{
+                    margin-right: 45px;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    border-bottom: 3px solid transparent;
+
+                    @include animation-settings;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        text-transform: uppercase;
+
+                        @include header-font;
+                        font-size: 18px;
+                        letter-spacing: normal;
+
+                        letter-spacing: 1px;
+                    }
+                }
+                .nav_item:hover{
+                    border-bottom: 3px solid #fff;
+                }
+                .nav_item:last-child{
+                    margin-right: 0;
+                }
+            }
+            .arrow{
+                width: 25px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@import "media.scss";

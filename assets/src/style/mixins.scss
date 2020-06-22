@@ -1,0 +1,52 @@
+@import "variables.scss";
+@import "fonts.scss";
+//width of content area
+@mixin content-width{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+//hover animation settings
+@mixin animation-settings {
+    transition: .3s;
+    /* transition-delay: .1s; */
+}
+//font style
+@mixin header-font {
+    font-family: 'Russo One', sans-serif;
+}
+@mixin font-phone {
+    font-family: 'RedDeadCyrillic2';
+}
+// font anouncment block
+@mixin font-location {
+    font-family: 'Dobrozrachniy';
+}
+@mixin font-date {
+    font-family: 'Facon';
+}
+@mixin font-city {
+    font-family: 'Russo One', sans-serif;
+}
+@mixin font-time {
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+// font description block
+@mixin description-text {
+    font-family: 'Intro';
+}
+// font post script
+@mixin postScript-text {
+    font-family: 'Kelly Slab', cursive;
+}
+// font title comics item
+@mixin title-comics-text {
+    font-family: 'Blue Lagoon';
+}
+// font title comics text
+@mixin comics-text {
+    font-family: 'Pribambas';
+}
+// font price text
+@mixin price-text {
+    font-family: 'Oswald', sans-serif;
+}

@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,26 +26,30 @@
 	            </a>
 	        </div>
 	        <div class="arrow-wrap">
-	            <img src="img/icon/down-arrow.svg" alt="" class="arrow" id="arrow-btn">
+	            <img src="img/icon/down-arrow.svg" alt="" class="arrow" id="btn-down">
 	        </div>
-	        <nav class="navigation_wrap">
+	        <nav class="navigation_wrap" id="mobile-bar">
 	            <ul class="nav_list">
-	                <!-- <li class="nav_item">
+	                <li class="nav_item">
+	                    <a href="index.html">Головна</a>
+	                </li>
+	                <li class="nav_item">
 	                    <a href="about.html">про нас</a>
-	                </li> -->
-	                <!-- <li class="nav_item">
+	                </li>
+	                <li class="nav_item">
 	                    <a href="price.html"> ціни</a>
-	                </li> -->
+	                </li>
 	                <!-- <li class="nav_item">
 	                    <a href="discount.html">дисконти</a>
 	                </li> -->
-	                <!-- <li class="nav_item">
+	                <li class="nav_item">
 	                    <a href="gallery.html">галерея</a>
-	                </li> -->
-	                <!-- <li class="nav_item">
+	                </li>
+	                <li class="nav_item">
 	                    <a href="contact.html">контакти</a>
-	                </li> -->
+	                </li>
 	            </ul>
+	            <!-- <img src="img/icon/up-arrow.svg" alt=""  id="btn-up" class="arrow"> -->
 	        </nav>
 	    </section>
 	</header>
@@ -59,7 +65,7 @@
 	<section class="announcement_wrap">
 		<section class="content_wrap">
 			<div class="image_wrap">
-				<img src="img/img-png/lord.png" alt="Зоряний Лорд" title="Зоряний Лорд" class="img_lord">
+				<img src="/img/img-png/lord.png" alt="Зоряний Лорд" title="Зоряний Лорд" class="img_lord">
 			</div>
 			<div class="text-block-wrap">
 				<div class="elements-wrap">
@@ -74,9 +80,10 @@
 					</div>
 				</div>
 				<div class="text-block">
-					<p class="date">12.06-03.07</p>
-					<p class="city">житомир</p>
-					<p class="location">кінотеатр “жовтень”</p>
+					<p class="date">26.06-19.07</p>
+					<p class="city"><a href="https://www.google.com/maps?rlz=1C1CHBD_ruUA905UA905&q=%D1%82%D1%80%D1%86+%D0%B3%D0%BE%D0%BB%D0%BB%D0%B8%D0%B2%D1%83%D0%B4&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiXv_WehonqAhXrsosKHQU1CBgQ_AUoAXoECBQQAw">чернігів</a></p>
+					<!-- <p class="location"><a href="0%BB%D0%B8%D0%B2%D1%83%D0%B4&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiXv_WehonqAhXrsosKHQU1CBgQ_AUoAXoECBQQAw">ТРЦ “hollywood”</a></p> -->
+					<img src="img/img-png/HW_LOGO (1).png" alt="" class="logo-location">
 					<p class="time">11<sup>00</sup>:21<sup>00</sup></p>
 				</div>
 				<div class="elements-wrap">
@@ -92,15 +99,145 @@
 				</div>
 			</div>
 			<div class="image_wrap">
-				<img src="img/img-png/spide.png" alt="Людина Павук" title="Людина Павук" class="img_spide">
+				<img src="/img/img-png/spide.png" alt="Людина Павук" title="Людина Павук" class="img_spide">
 			</div>
 		</section>
 	</section>
-	<!-- <section class="description_wrap"></section> -->
+	<section class="description_wrap">
+		<section class="content_wrap">
+			<div class="logo_wrap">
+				<a href="index.html">
+					<img src="img/img-png/logo-3.png" alt="logo" class="logo">
+				</a>
+			</div>
+			<div class="description-text_wrap">
+				<div class="line_wrap">
+					<div class="line_block">
+						<div class="line_1"></div>
+						<div class="line"></div>
+					</div>
+					<img src="img/icon/hero-icon.png" alt="" class="logo_icon">
+					<div class="line_block">
+						<div class="line_1"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+				<div class="description-text">
+					<p>Вже у Вашому місті єдина виставка в Україні
+						 ”Всесвіт СУПЕРГЕРОЇВ та Minecraft”. 
+						 Під час відвідування ви зможете зануритися в таємничий 
+						 віртуальний світ фантастики, зробити незабутні фото з 
+						 героями та їх атрибутами, прокататися на бетмобілі, 
+						 позмагатися з героями “Minecraft”, приміряти костюми 
+						 героїв, спробувати подужати молот Тора... і багато іншого. 
+						 Ми чекаємо саме на тебе. Не упусти шанс подарувати собі 
+						 та рідним незабутні враження. Міста чекають на нас. Приєднуйся і Ти.</p>
+				</div>
+				<div class="post-script">
+					<p class="text-1">Діє акційна система відвідування.</p>
+					<p class="text-2">Дітям - безкоштовно!</p>
+				</div>
+				<div class="line_wrap">
+					<div class="line_block">
+						<div class="line_1"></div>
+						<div class="line"></div>
+					</div>
+					<img src="img/icon/hero-icon.png" alt="" class="logo_icon">
+					<div class="line_block">
+						<div class="line_1"></div>
+						<div class="line"></div>
+					</div>
+				</div>
+			</div>
+			<div class="comics_wrap">
+				<!--  -->
+				<!-- marvel -->
+				<!--  -->
+				<a href="###" class="comics_item">
+					<h2 class="comics_item_title">Marvel comics</h2>
+					<div class="content_block">
+						<div class="text_block">
+							<p class="iron_text">Що включає в себе Marvel? І що взагалі мається на увазі під всесвіту? 
+								Мультіверс є світом, де герої різних коміксів зустрічаються в одній історії. 
+								Відмінна особливість Всесвіту Marvel полягає в тому, що більшість подій 
+								відбуваються на Землі. На сьогоднішній день кількість персонажів: 
+								героїв, лиходіїв, Богів, прибульців, спецагентів і цивільних - перевалило 
+								за п'ятдесят тисяч.</p>
+						</div>
+						<div class="img_block">
+							<img src="/img/img-png/iron-man.png" alt="Залізна людина" class="photo_item ironman" title="Залізна людина">
+						</div>
+					</div>
+				</a>
+				<!--  -->
+				<!-- /marvel -->
+				<!--  -->
+				<!--  -->
+				<!-- dc -->
+				<!--  -->
+				<a href="###" class="comics_item">
+					<h2 class="comics_item_title">DC comics</h2>
+					<div class="content_block" style="margin-right: 0;">
+						<div class="img_block">
+							<img src="/img/img-png/superman.png" alt="Супер людина" class="photo_item superman" title="Супер людина">
+						</div>
+						<div class="text_block">
+							<p class="super_text">Сьогодні Всесвіт DC налічує понад 20 тисяч персонажів. 
+								Серед них можна зустріти богів, ангелів, героїв, лиходіїв, антигероїв і цивільних. 
+								При цьому видавництво докладає величезних зусиль, 
+								щоб список жителів з кожним роком збільшувався, а істоти з різних світів зустрічалися 
+								на сторінках одного номер.</p>
+						</div>
+					</div>
+				</a>
+				<!--  -->
+				<!-- /dc -->
+				<!--  -->
+				<!--  -->
+				<!-- minecraft -->
+				<!--  -->
+				<a href="###" class="comics_item">
+					<h2 class="comics_item_title">Minecraft</h2>
+					<div class="content_block">
+						<div class="text_block">
+							<p class="iron_text">Minecraft дає в розпорядження гравцеві тривимірний процедурно генерований світ, 
+								що складається з кубічних блоків, які можливо використовувати на свій розсуд. 
+								Блоки поділяються на матеріали та об'єкти, котрі не обов'язково мають видиму кубічну форму, 
+								але займають умовний один кубик. Гра не ставить перед гравцем однозначних цілей.</p>
+						</div>
+						<div class="img_block">
+							<img src="/img/img-png/steve.png" alt="Залізна людина" class="photo_item steve" title="Залізна людина">
+						</div>
+					</div>
+				</a>
+				<!--  -->
+				<!-- /minecraft -->
+				<!--  -->
+			</div>
+		</section>
+	</section>
 	<footer>
-	    
+	    <section class="footer_content">
+	        <section class="content_wrap">
+	            <div class="socialicon_wrap">
+	                <a href="https://www.facebook.com/superheroesminecraftukraina/?epa=SEARCH_BOX" title="facebook profile"><img src="img/img-png/social-icon-01.svg" alt=""></a>
+	                <a href="https://www.instagram.com/superheroes_minecraft_ukraina/" title="instagram profile"><img src="img/img-png/social-icon-02.svg" alt=""></a>
+	                <a href="index.html"><img src="img/img-png/social-icon-03.svg" alt=""></a>
+	            </div>
+	            <div class="phone_wrap">
+	                <p>+38 097 676 38 63</p>
+	                <p>+38 050 595 58 08</p>
+	            </div>
+	        </section>
+	        <p class="footer_title">© 2020,"The universe of Superheroes and Minecraft".
+	            <a href="http://ekobilske.online/" style="color: yellow;" title="Розробник веб сайту">Design by Eugene Kobeliaksky</a>
+	        </p>
+	    </section>
 	</footer>
-
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

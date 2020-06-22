@@ -1,0 +1,60 @@
+@import "mixins.scss";
+@import "variables.scss";
+footer{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/background/footer_bg.png);
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+        .footer_content{
+            @include content-width;
+            .content_wrap{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .socialicon_wrap{
+                    a{
+                        img{
+                            width: 150px;
+                            @include animation-settings;
+                        }
+                        img:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .phone_wrap{
+                    padding-right: 15px;
+                    p{
+                        @include header-font;
+                        font-size: 36px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        letter-spacing: 1.8px;
+                        color: #ffffff;
+
+                        margin-bottom: 15px;
+                    }
+                    p:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .footer_title{
+                @include header-font;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 4.29;
+                letter-spacing: 2.1px;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+}
+@import "media.scss";

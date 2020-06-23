@@ -5,6 +5,14 @@
     // media style 
 @media only screen and (max-width: 1366px){
     body{
+      .slider {
+         display: none;
+      }   
+      .cover_wrap{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
         .announcement_wrap{
             .content_wrap{
                 .image_wrap{

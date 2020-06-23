@@ -17,8 +17,9 @@ footer{
                 align-items: center;
                 .socialicon_wrap{
                     a{
+                        margin-right: 25px;
                         img{
-                            width: 150px;
+                            width: 100px;
                             @include animation-settings;
                         }
                         img:hover{

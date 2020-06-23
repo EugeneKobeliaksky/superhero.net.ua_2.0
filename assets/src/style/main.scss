@@ -153,9 +153,9 @@ body{
       font-size: 100px;
       text-align: center;
     }
-   @import 'price.scss';
-   @import "contact.scss";
-   @import "gallery.scss";
+   @import "page_styles/price.scss";
+   @import "page_styles/contact.scss";
+   @import "page_styles/gallery.scss";
    .cover_wrap{
       width: 100%;
       height: 830px;
@@ -713,6 +713,9 @@ body{
          }
       }
    }
+   @import "page_styles/marvel.scss";
+   @import "page_styles/dc.scss";
+   @import "page_styles/minecraft.scss";
    @import 'footer.scss';
 }
 @import "media.scss";

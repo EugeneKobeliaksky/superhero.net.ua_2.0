@@ -100,6 +100,12 @@ $(document).ready(function(){
     /* /slider */
 ////////////////////
 window.scrollBy({ top: 100, behavior: 'smooth' });
+var grid = document.querySelector('.grid');
+var msnry = new Masonry( grid, {
+  // options...
+  itemSelector: '.grid-item',
+  columnWidth: 300
+});
 ////////contact form
 (function($){
   $(window).on("load",function(){
